@@ -257,6 +257,7 @@
 }
 .lista-redes li a:hover {
   text-decoration: underline;
+  color: darkslateblue;
   cursor: pointer;
 }
 .footer-politica {
