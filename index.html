@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+    <title>PaginaConVirus</title>
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img
+          src="Imagenes/HADK_logo_sinfondo.png"
+          alt=""
+          width="100"
+          height="50"
+        />
+      </a>
+
+      <ul class="Menu_Horizontal">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Productos</a></li>
+        <li>
+          <a href="">Catalogo</a>
+          <ul class="Menu_Vertical">
+            <li><a href="">Bebidas</a></li>
+            <li><a href="">Dulces</a></li>
+            <li><a href="">Galletas</a></li>
+            <li><a href="">Juguetes</a></li>
+          </ul>
+        </li>
+        <li><a href="#contactar">Contactar</a></li>
+      </ul>
+    </nav>
+    <!--Seccion Productos-->
+    <section class="seccion-productos">
+      <div class="cont-gral-productos">
+        <div class="cont-pro-texto">
+          <h2>Seccion de Productos</h2>
+          <p>
+            Una bodega ofrece una gran variedad de productos de uso diario.
+            Entre los más comunes se encuentran alimentos básicos como arroz,
+            azúcar y fideos; bebidas como agua, gaseosas y jugos; además de
+            snacks, productos de limpieza y artículos de cuidado personal.
+            Gracias a esta diversidad, las bodegas se convierten en el punto más
+            cercano y práctico para abastecer el hogar.
+          </p>
+        </div>
+        <div class="cont-pro-img">
+          <img src="Imagenes/bodega_1.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!--Seccion Categorias-->
+    <section class="seccion-Categorias">
+      <div class="cont-gral-categorias">
+        <div class="cont-cat-texto">
+          <h2>Seccion Categorias</h2>
+          <p>
+            Las categorías de una tienda permiten organizar los productos según
+            su tipo o función, facilitando tanto la búsqueda de los clientes
+            como el control del inventario. En una tienda o bodega, las
+            categorías más comunes incluyen alimentos y abarrotes, como arroz,
+            azúcar, fideos y conservas; bebidas, como gaseosas, agua y jugos;
+            productos de limpieza y hogar, como detergentes, jabones y bolsas de
+            basura; además de artículos de cuidado personal, como shampoo, pasta
+            dental y papel higiénico. También se incluyen snacks y golosinas,
+            como galletas, chocolates y papas fritas, y otros productos útiles
+            como pilas, fósforos o artículos de temporada. Una buena
+            organización por categorías no solo mejora la presentación del
+            negocio, sino que también agiliza la atención y hace que la
+            experiencia de compra sea más rápida y agradable.
+          </p>
+          <p>
+            Mantener las categorías bien definidas dentro de una tienda no solo
+            ayuda al orden, sino que también permite identificar qué productos
+            se venden más y cuáles necesitan reabastecerse. Además, al tener los
+            artículos clasificados, es más fácil implementar promociones o
+            destacar ciertos productos para atraer la atención de los clientes.
+            Una tienda con buena organización transmite confianza, facilita las
+            compras y mejora la experiencia del consumidor, haciendo que las
+            personas quieran volver una y otra vez.
+          </p>
+          <button>Leer mas...</button>
+        </div>
+
+        <div class="cont-cat-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3RgdnDtCNxo?si=Vkdm3fVqhoTiGvVS"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!--Seccion formulario-->
+    <section class="seccion-formulario" id="contactar">
+      <div class="cont-gral-formulario">
+        <h2>Formulario de registro</h2>
+        <p>Complete todos los datos y sus preferencias</p>
+
+        <form class="formulario">
+          <div class="campo">
+            <label form="nombre">Nombres completos: </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+          <!--Lista despegable-->
+          <div class="campo">
+            <label for="pais">Pais</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un pais</option>
+              <option value="Peru">Peru</option>
+              <option value="Peru">Mexico</option>
+              <option value="Peru">Chile</option>
+              <option value="Peru">Argentina</option>
+              <option value="Peru">Colombia</option>
+              <option value="Peru">Venezuela</option>
+            </select>
+          </div>
+          <!--checkbox-->
+          <div class="campo">
+            <label> Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="tecnologia"
+                  />Tecnologia</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="educacion"
+                  />educacion</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="idioma"
+                  />idioma</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--radiobutton-->
+          <div class="campo">
+            <label> Genero:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="genero"
+                    value="masculino"
+                  />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="genero"
+                    value="femenino"
+                  />Femenino</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="genero" value="No decir" />No
+                  decir</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <!--cierre formulario-->
+      </div>
+    </section>
+    <!--Pie de pagina-->
+    <section class="seccion-footer">
+      <div class="cont-gral-footer">
+        <div class="footer-info">
+          <h3>Conoce un poco mas de nosotros</h3>
+          <p>
+            En HADK, nos dedicamos a ofrecer una amplia variedad de productos de
+            la mejor calidad a precios accesibles. Somos una bodega comprometida
+            con el servicio y la atención personalizada, buscando siempre
+            satisfacer las necesidades de nuestros clientes. Trabajamos día a
+            día para mantener nuestro surtido completo y brindar una experiencia
+            de compra rápida, cómoda y confiable. Nos caracteriza la cercanía
+            con nuestra comunidad, la honestidad en nuestro trabajo y el
+            compromiso de seguir creciendo junto a quienes confían en nosotros.
+          </p>
+          <p>&copy: 2025 Todos los derechos reservados</p>
+        </div>
+        <div class="footer-redes">
+          <h3>Nuestras redes</h3>
+          <ul class="lista-redes">
+            <li>
+              <img src="Imagenes/face.jpg" alt="" width="20" height="20" />
+              <a href="">Facebook</a>
+            </li>
+            <li>
+              <img src="Imagenes/tik.jpg" alt="" width="20" height="20" />
+              <a href="">Tiktok</a>
+            </li>
+            <li>
+              <img src="Imagenes/tele.jpg" alt="" width="20" height="20" />
+              <a href="">Telegram</a>
+            </li>
+            <li>
+              <img src="Imagenes/inst.jpg" alt="" width="20" height="20" />
+              <a href="https://www.instagram.com/peruvianmiau" target="_black"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <img src="Imagenes/x.jpg" alt="" width="20" height="20" />
+              <a href="https://x.com/PeruvianMiau" target="_blank">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <!--POLITICA Y PROTECCION DE DATOS-->
+        <div class="footer-politica">
+          <h3>Proteccion de datos</h3>
+          <ul class="lista-proteccion">
+            <li>
+              <a href="PDF/Ley_Proteccion_Datospdf.pdf" target="_blank"
+                >Ley Proteccion Datos</a
+              >
+            </li>
+            <li><a href="">Politicas</a></li>
+            <li><a href="">Normas</a></li>
+            <li><a href="">Reglamento</a></li>
+          </ul>
+        </div>
+        <!---->
+      </div>
+    </section>
+  </body>
+</html>

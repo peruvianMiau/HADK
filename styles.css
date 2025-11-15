@@ -1,0 +1,286 @@
+/*Estilo de la barra superior fija*/
+.topheader {
+  position: fixed;
+  background-color: mediumblue;
+  width: 100%; /*Ancho completo*/
+  height: 6.25rem; /*Altura de la barra*/
+  display: flex; /*Flexbox para alinear elementos*/
+  justify-content: space-between; /*Espacio entre elementos*/
+  align-items: center; /*Centrar verticalmente*/
+  padding: 0 1.25rem; /*Espacio interno a los lados*/
+}
+
+/*Posiciones del menu horizontal*/
+.Menu_Horizontal {
+  list-style: none; /*Quitar viñetas*/
+  display: flex; /*Flexbox para alineación horizontal*/
+  justify-content: space-around; /*Espacio uniforme entre elementos*/
+  width: 100%; /*Ancho completo*/
+  height: 1.25rem; /*Altura del menu*/
+}
+
+/*Estilo de los enlaces del menu horizontal*/
+.Menu_Horizontal li a {
+  text-decoration: none; /*Quitar subrayado*/
+  color: white; /*Color del texto*/
+}
+
+/*Efecto al pasar el cursor por los enlaces del menu horizontal*/
+.Menu_Horizontal li a:hover {
+  color: darkorange;
+  font-weight: 700;
+  text-decoration: underline; /*Subrayado al pasar el cursor*/
+  /*font-size: 20px;*/
+}
+
+/*Posiciones del menu vertical*/
+.Menu_Vertical {
+  padding: 0; /*sub menu de cuentas mas cerca de cuentas*/
+  position: absolute; /*Posicion absoluta para que no afecte al flujo del documento*/
+  list-style: none; /*Quitar viñetas*/
+  display: none; /*Ocultar por defecto*/
+  width: 12.5rem; /*Ancho del menu vertical*/
+}
+
+/*Cuando se pase el cursor por el menu horizontal, aparece el menu vertical*/
+.Menu_Horizontal li:hover .Menu_Vertical {
+  display: block; /*Mostrar el menu vertical al pasar el cursor*/
+}
+
+/*Estilo de los enlaces del menu vertical*/
+.Menu_Vertical li a {
+  display: block; /*Hacer que los enlaces ocupen todo el ancho*/
+  text-decoration: none; /*Quitar decoracion del texto*/
+  padding: 0.313rem; /*Espacio interno*/
+}
+/*Seccion Productos*/
+.seccion-productos {
+  padding: 1.25rem 1.25rem;
+  background-color: cornflowerblue; /*fondo de toda la seccion*/
+  width: 100%;
+}
+.cont-gral-productos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.cont-pro-texto {
+  flex: 1;
+}
+.cont-pro-texto h2 {
+  color: orange;
+  text-decoration: underline;
+  margin-bottom: 0.625rem;
+  margin-top: 5.625rem;
+}
+
+.cont-pro-texto p {
+  color: black; /*texto*/
+  line-height: 1.8;
+  background: mediumseagreen; /*Fondo del texto*/
+  border-radius: 0.313rem;
+  padding: 0.625rem 0.938rem; /*extiende el borde del texto*/
+}
+.cont-pro-img {
+  flex: 1;
+}
+
+.cont-pro-img img {
+  width: 100%;
+  max-width: 31.25rem;
+  border-radius: 0.625rem;
+  margin-top: 7.813rem; /*Posicion vertical de la imagen*/
+}
+
+/*Seccion Categorias*/
+.seccion-Categorias {
+  padding: 3.75rem 1.25rem;
+  background-color: cornflowerblue; /*color de toda la seccion*/
+  width: 100%;
+}
+.cont-gral-categorias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 0.625rem;
+}
+.cont-cat-texto {
+  flex: 1;
+}
+.cont-cat-texto h2 {
+  color: orange;
+  text-decoration: underline;
+  font-weight: 700;
+  line-height: 1.9;
+}
+.cont-cat-texto p {
+  color: black; /*color texto*/
+  line-height: 1.8;
+  background: mediumseagreen; /*Fondo del texto*/
+  border-radius: 0.313rem;
+  padding: 0.625rem 0.938rem;
+}
+/*Seccion Boton*/
+.cont-cat-texto button {
+  font-weight: 700; /*negrita*/
+  margin-top: 1.25rem;
+  padding: 0.625rem 1.25rem;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 0.313rem; /*redondear borde*/
+  cursor: pointer; /*para la mano señlando*/
+}
+/*Seccion video*/
+.cont-cat-video {
+  flex: 1;
+}
+.cont-cat-video iframe {
+  width: 100%;
+  max-width: 31.25rem;
+  border-radius: 0.313rem;
+}
+/*SECCION FORMULARIO*/
+.seccion-formulario {
+  padding: 2.5rem;
+  background-color: #add8e6;
+  gap: 0.625rem;
+  /*width: 100%;*/
+  border: 0.188rem;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.cont-gral-formulario {
+  background-color: lightcyan;
+  padding: 1.875rem;
+  border: 0.125rem solid indigo;
+  border-radius: 0.5rem;
+  margin-bottom: 1.875rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+
+.cont-gral-formulario h2 {
+  /*subtitulo*/
+  color: mediumseagreen;
+  text-decoration: underline;
+}
+.campo {
+  background-color: lightskyblue;
+  padding: 0.938rem;
+  border: 0.094rem solid lightseagreen;
+  border-radius: 0.313rem;
+  margin-bottom: 0.938rem;
+}
+.formulario label {
+  display: block;
+  font-weight: 600; /*negrita*/
+  margin-bottom: 0.313rem;
+  color: tomato;
+}
+.formulario input[type="text"],
+.formulario select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.313rem solid yellowgreen;
+  border-radius: 0.313rem;
+  box-sizing: border-box; /*ajustar cuadro para escribir de nombre*/
+}
+/*quitar viñetas*/
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.5rem;
+  border: 0.5rem solid slateblue;
+  background-color: powderblue;
+  border-radius: 0.938rem;
+}
+/*Boton Enviar*/
+.formulario button {
+  background-color: navy;
+  padding: 0.625rem 1.25rem;
+  color: white;
+  border: 0.313rem solid darkslateblue;
+  border-radius: 0.313rem; /*redondear borde*/
+  cursor: pointer;
+
+  font-weight: 700; /*negrita*/
+  margin-top: 1.25rem;
+}
+/*SECCION PIE DE PAGINA*/
+.seccion-footer {
+  background-color: oldlace;
+  color: midnightblue;
+  padding: 2.5rem 1.25rem;
+}
+
+.cont-gral-footer {
+  display: flex; /*2 columnas*/
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.footer-info {
+  flex: 1;
+}
+.footer-info h3 {
+  color: mediumseagreen;
+  margin-bottom: 0.938rem;
+}
+.footer-redes {
+  flex: 1;
+}
+.footer-redes h3 {
+  color: mediumseagreen;
+  margin-bottom: 0.938rem;
+}
+
+.lista-redes {
+  list-style: none;
+  padding: 0;
+}
+.lista-redes li {
+  margin-bottom: 0.5rem;
+}
+.lista-redes li a {
+  text-decoration: none;
+  color: firebrick;
+}
+.lista-redes li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-politica {
+  flex: 1;
+}
+.footer-politica h3 {
+  color: dodgerblue;
+  margin-bottom: 0.938rem;
+}
+.lista-proteccion {
+  list-style: none;
+  padding: 0;
+}
+.lista-proteccion li a {
+  text-decoration: none;
+  color: firebrick;
+}
+.lista-proteccion li a:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+/*deslizarse despacio*/
+html {
+  scroll-behavior: smooth;
+}
