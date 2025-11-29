@@ -8,7 +8,7 @@
   min-height: 100vh;
   width: 100%;
   /* Fondo atractivo para la vista de escritorio */
-  background: linear-gradient(135deg, #943fde 25%, #443fde 75%, #3f89de 0%);
+  background-image: url("/Imagenes/bodegita-anime.jpg");
   padding: 1.25rem; /* 20px de padding */
 }
 
