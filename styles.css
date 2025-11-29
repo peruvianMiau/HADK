@@ -1,4 +1,5 @@
 /*Estilo de la barra superior fija*/
+@import url("https://fonts.googleapis.com/css2?family=Nabla&family=Shadows+Into+Light&display=swap");
 .topheader {
   position: fixed;
   background-color: mediumblue;
@@ -21,6 +22,7 @@
 
 /*Estilo de los enlaces del menu horizontal*/
 .Menu_Horizontal li a {
+  font-family: "Shadows Into Light", cursive;
   text-decoration: none; /*Quitar subrayado*/
   color: white; /*Color del texto*/
 }
